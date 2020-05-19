@@ -3,6 +3,9 @@ package class2.Recursion;
 import java.util.ArrayList;
 import java.util.List;
 
+//This is to find the subsets from the given number array.
+//Leetcode problem: https://leetcode.com/problems/subsets/
+//Used recursion algorithm
 public class Subsets {
 
     private static List<List<Integer>> findSubset(int[] input){
@@ -12,10 +15,9 @@ public class Subsets {
     }
 
     private static void recursionHelper(List<List<Integer>> outputList, List<Integer> subset, int[] input, int start){
-        //Add the subset
+        //Add the subset to the resultset list.
         outputList.add(new ArrayList<>(subset));
-        System.out.println("outputList = "+outputList);
-        //Loop the input array
+        //Loop the input array to find the subsets
         for(int i=start;i<input.length;i++){
             subset.add(input[i]);
            System.out.println("subset = "+subset);
