@@ -1,4 +1,4 @@
-package class2.Recursion;
+package Class2.Recursion;
 
 //This will find the unique path. Given the matrix m X n
 //Leetcode problem: https://leetcode.com/problems/unique-paths/

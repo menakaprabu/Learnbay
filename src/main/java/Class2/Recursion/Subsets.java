@@ -1,4 +1,4 @@
-package class2.Recursion;
+package Class2.Recursion;
 
 import java.util.ArrayList;
 import java.util.List;
