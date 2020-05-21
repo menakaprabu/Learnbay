@@ -24,7 +24,6 @@ public class Subsets {
             recursionHelper(outputList, subset, input, i+1);
             // remove
             subset.remove(subset.size() - 1);
-         //   System.out.println("After remove = "+subset);
         }
     }
 

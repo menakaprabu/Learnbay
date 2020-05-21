@@ -14,6 +14,10 @@ public class UniquePath {
     }
 
     private static int numPaths(int row, int column) {
+        if(row < 0 || column < 0){
+            return 0;
+        }
+
         if (row == 0 || column == 0) {
             return 1;
         }
@@ -22,7 +26,7 @@ public class UniquePath {
     }
 
     public static void main(String[] args){
-        int noOfPaths = uniquePaths(3,2);
+        int noOfPaths = uniquePaths(3,4);
         System.out.println("no of paths = "+noOfPaths);
     }
 
