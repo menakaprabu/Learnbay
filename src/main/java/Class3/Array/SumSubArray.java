@@ -19,7 +19,7 @@ public class SumSubArray {
     public static void main(String[] args){
         int[] input = new int[]{-4,6,-1, 5};
         int maxSumofContinousSubArray = findSubArray(input);
-        System.out.println("Output = "+maxSumofContinousSubArray);
+        System.out.println("maxSumofContinousSubArray = "+maxSumofContinousSubArray);
     }
 
 }
