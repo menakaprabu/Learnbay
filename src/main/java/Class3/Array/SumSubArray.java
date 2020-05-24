@@ -13,14 +13,13 @@ public class SumSubArray {
             if (sum > maxSoFar)
                 maxSoFar = sum;
         }
-
         return maxSoFar;
     }
 
     public static void main(String[] args){
-        int[] input = new int[]{-4,1,5};
-        int output = findSubArray(input);
-        System.out.println("Output = "+output);
+        int[] input = new int[]{-4,6,-1, 5};
+        int maxSumofContinousSubArray = findSubArray(input);
+        System.out.println("Output = "+maxSumofContinousSubArray);
     }
 
 }
