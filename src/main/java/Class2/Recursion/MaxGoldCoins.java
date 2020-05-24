@@ -42,6 +42,7 @@ public class MaxGoldCoins {
         //add input[x][y] is to add the coin where he is standing currently.
         int maxCoins = input[x][y] +
                 Math.max(Math.max(coinsFromDiagonallyLeft, coinsFromDiagonallyRight),coinsFromDiagonallyDown);
+
         if (pathMap.containsKey(coinsFromDiagonallyDown+input[x][y])){
             pathMap.put(coinsFromDiagonallyDown+input[x][y], pathMap.get(coinsFromDiagonallyDown+input[x][y])+1);
         }else{
