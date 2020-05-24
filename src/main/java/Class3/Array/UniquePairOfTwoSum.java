@@ -3,7 +3,7 @@ package Class3.Array;
 import java.util.*;
 
 //This class is to return the count of unique pair such that when we add them we get the target value.
-//Time complexity is O(n
+//Time complexity is  O(N log(N)) + O(N)
 public class UniquePairOfTwoSum {
 
     private static Map getPair(int[] input, int target){
