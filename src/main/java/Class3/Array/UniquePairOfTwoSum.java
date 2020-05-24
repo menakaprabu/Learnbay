@@ -3,6 +3,7 @@ package Class3.Array;
 import java.util.*;
 
 //This class is to return the count of unique pair such that when we add them we get the target value.
+//Given Array will not have duplicate elements
 //Time complexity is  O(N log(N)) + O(N)
 public class UniquePairOfTwoSum {
 
@@ -33,8 +34,8 @@ public class UniquePairOfTwoSum {
     }
 
     public static void main(String[] args){
-        int[] input = new int[]{6, 2, 5, 7, 11, 8, 15};
-        Map pairsMap = getPair(input, 13);
+        int[] input = new int[]{11,15,51,18,13,2,5,7,54};
+        Map pairsMap = getPair(input, 20);
         System.out.println("no of pairs = "+pairsMap.size());
         System.out.println("uniquePairs = "+pairsMap);
     }

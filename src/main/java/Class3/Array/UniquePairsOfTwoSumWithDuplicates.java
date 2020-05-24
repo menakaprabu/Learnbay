@@ -9,6 +9,7 @@ public class UniquePairsOfTwoSumWithDuplicates {
 
     private static Map getPair(int[] input, int target){
         Arrays.sort(input);
+       // 2,2,5,7,11,13,15,15,18,18,51,54
         int fromFirst = 0;
         int fromLast = input.length -1;
 
@@ -34,8 +35,8 @@ public class UniquePairsOfTwoSumWithDuplicates {
     }
 
     public static void main(String[] args){
-        int[] input = new int[]{6, 2, 5, 7, 11, 2, 5, 8, 15};
-        Map pairsMap = getPair(input, 13);
+        int[] input = new int[]{11,15,51,18,13,2,5,7,54,15,2,18};
+        Map pairsMap = getPair(input, 20);
         System.out.println("no of pairs = "+pairsMap.size());
         System.out.println("uniquePairs = "+pairsMap);
     }
