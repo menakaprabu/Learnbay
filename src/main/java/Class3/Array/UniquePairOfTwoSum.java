@@ -23,7 +23,7 @@ public class UniquePairOfTwoSum {
                count++;
                fromFirst++;
             }
-            if((input[fromFirst] + input[fromLast]) > target){
+            else if((input[fromFirst] + input[fromLast]) > target){
                 fromLast--;
             }else{
                 fromFirst++;
