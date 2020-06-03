@@ -1,8 +1,6 @@
 package Class2.Recursion;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /*There is a n*m grid containing gold coins. A person can choose to stand on any of the
@@ -11,6 +9,8 @@ or downward direction from the current cell. You need to print the maximum coins
 following the condition given, and also return the number of paths from which you will get max coins.*/
 public class MaxGoldCoins {
 
+    // 0 1 0
+    // 1 0 0
     private static Map<Integer, Integer> pathMap = new HashMap<>();
 
     private static void findMaxCoins(int[][] input, int row, int col){
@@ -18,7 +18,7 @@ public class MaxGoldCoins {
        int indexCol = -1;
         for(int i=0;i<col;i++){
 
-           int coins = recursionHelper(input, row, col, 0, i, i);
+           int coins = recursionHelper(input, row, col, 0, i);
 
            if(coins >= maxCoinsSoFar ) {
                maxCoinsSoFar = coins;
@@ -30,14 +30,14 @@ public class MaxGoldCoins {
        System.out.println("Number of paths which has max coins = "+pathMap.get(maxCoinsSoFar));
     }
 
-    private static int recursionHelper(int[][] input, int row, int col, int x, int y, int key){
+    private static int recursionHelper(int[][] input, int row, int col, int x, int y){
 
         if(x == row || y == col || y < 0 )
             return 0;
 
-        int coinsFromDiagonallyRight = recursionHelper(input, row, col, x+1, y+1, key);
-        int coinsFromDiagonallyLeft = recursionHelper(input, row, col, x+1, y-1, key);
-        int coinsFromDiagonallyDown = recursionHelper(input, row, col, x+1, y, key);
+        int coinsFromDiagonallyRight = recursionHelper(input, row, col, x+1, y+1);
+        int coinsFromDiagonallyLeft = recursionHelper(input, row, col, x+1, y-1);
+        int coinsFromDiagonallyDown = recursionHelper(input, row, col, x+1, y);
 
         //add input[x][y] is to add the coin where he is standing currently.
         int maxCoins = input[x][y] +

@@ -5,7 +5,7 @@ package Class2.Recursion;
 public class UniquePath {
 
     private static int uniquePaths(int m, int n) {
-        //Base condition if the given matix is 0,0 then retunr 0
+        //Base condition if the given matix is 0,0 then return 0
         if (m == 0 || n == 0) {
             return 0;
         }

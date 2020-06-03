@@ -2,6 +2,7 @@ package Class1.Arrays;
 
 public class SortColors {
 
+    //2 pointer
     //Steps:
     //1. start = 0, end = from last. index is to traverse
     //2.a if the input[index] = 0 then swap the input[index] and input[start]. So that the 0 will go to start. increment the start and index.
