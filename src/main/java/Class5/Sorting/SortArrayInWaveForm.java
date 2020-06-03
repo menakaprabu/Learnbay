@@ -8,8 +8,8 @@ public class SortArrayInWaveForm {
        // Output {10, 5, 6, 2, 20, 3, 100, 80}
         //step 1: check the even index value with odd index value
         for(int i=0;i<input.length;i+=2){
-            if(i>0 && input[i-1] > input[i]){
-                swap(input, i-1, i);
+            if(i>0 && input[i] < input[i-1]){
+                swap(input, i, i-1);
             }
 
             if(i<input.length && input[i] < input[i+1]){
@@ -31,4 +31,5 @@ public class SortArrayInWaveForm {
             System.out.println("Output = "+input[i]);
         }
     }
+
 }
