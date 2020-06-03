@@ -17,10 +17,7 @@ public class FindMinimumInRotatedArray {
 
             if(input[start] <= input[mid]  && input[mid] > input[end]) {
                  start = mid+1;
-            }else{
-                end = mid - 1;
             }
-
             return input[start];
         }
 
@@ -29,7 +26,7 @@ public class FindMinimumInRotatedArray {
     }
 
     public static void main(String[] args){
-        int[] input = new int[]{3,4,5,1,2};
+        int[] input = new int[]{3,4,5,0,1,2};
         int output = findMinInRotatedArray(input);
         System.out.println("output = "+output);
     }
