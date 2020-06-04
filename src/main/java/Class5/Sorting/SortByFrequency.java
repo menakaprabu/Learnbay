@@ -13,30 +13,34 @@ public class SortByFrequency {
             }else{
                 map.put(input[i], 1);
             }
-          /*  if(i+1 < input.length && input[i] > input[i+1]){
-                int temp = input[i];
-                input[i] = input[i+1];
-                input[i+1] = temp;
-            }*/
         }
+        sortByValue(map);
+    }
 
-        List<Map.Entry<Integer,Integer>> list = new LinkedList<>(map.entrySet());
+    private static HashMap<Integer, Integer> sortByValue(Map<Integer, Integer> hm)
+    {
+        // Create a list from elements of HashMap
+        List<Map.Entry<Integer, Integer> > list =
+                new LinkedList(hm.entrySet());
 
-        Collections.sort(list, new Comparator<Map.Entry<Integer, Integer>>() {
-            @Override
-            public int compare(Map.Entry<Integer, Integer> o1, Map.Entry<Integer, Integer> o2) {
+        // Sort the list
+        Collections.sort(list, new Comparator<Map.Entry<Integer, Integer> >() {
+            public int compare(Map.Entry<Integer, Integer> o1,
+                               Map.Entry<Integer, Integer> o2)
+            {
                 return o1.getValue().compareTo(o2.getValue());
             }
         });
 
-        HashMap<Integer, Integer> temp = new HashMap<>();
+        // put data from sorted list to hashmap
+        HashMap<Integer, Integer> temp = new LinkedHashMap<Integer, Integer>();
+        List sortedByFrequency = new ArrayList();
         for (Map.Entry<Integer, Integer> aa : list) {
             temp.put(aa.getKey(), aa.getValue());
+            System.out.println("Sorted array by frequency = "+aa.getKey());
+            sortedByFrequency.add(aa.getKey());
         }
-
-        for(int i=0;i<temp.size();i++){
-            System.out.println("Output = "+temp.get(i));
-        }
+        return temp;
     }
 
     public static void main(String[] args){

@@ -33,9 +33,9 @@ public class MergeSortNotWorking {
         }
 
         j = strt;
-        for( i=0 ; i<end-strt+1; i++) {
+        for( i=0 ; i<=tempArray.length-1; i++) {
             arr[j] = tempArray[i];//temp = 2,3: 1,2,2
-            i++; // arr = 2,2,1 : 1,2,1
+           // i++; // arr = 2,2,1 : 1,2,1
             j++;
         }
     }
@@ -52,8 +52,8 @@ public class MergeSortNotWorking {
     }
 
     public static void main(String[] args){
-        int[] arr = new int[]{3,2,1};
-        divideAndMerge(arr,0,arr.length);
+        int[] arr = new int[]{3,2,8,20,0,1};
+        divideAndMerge(arr,0,arr.length-1);
         //Print the array values
         for (int i=0;i<arr.length;i++){
             System.out.println("array value = "+arr[i]);
