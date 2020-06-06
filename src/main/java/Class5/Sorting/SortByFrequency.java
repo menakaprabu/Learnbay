@@ -7,7 +7,7 @@ public class SortByFrequency {
     //Sort by frequency
     //1. Use hashmap: given value as key and frequency as value
     //2. Put the entry set into the arraylist
-    //3. sort the list (this will be Ascending order)
+    //3. sort the list (this will be Decending order o2.compareTo(o1)
     //4. Loop the list and get the value which will be the frequency and print that many times
     private static void sortByFrequecy(int[] input) {
 
