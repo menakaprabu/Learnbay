@@ -102,7 +102,7 @@ public class LinkedList {
         boolean isFound = linkedList.search(6);
         System.out.println("Is found = "+isFound);
 
-        //Count no. of size
+        //Count no. of elements
         int size = linkedList.countElement();
         System.out.println("size = "+size);
     }
