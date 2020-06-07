@@ -25,7 +25,6 @@ public class LinkedList {
         Node currNode = this.head;
         while (currNode.nextPtr != null){
             currNode = currNode.nextPtr;
-            System.out.println("curr node = "+currNode.value);
         }
         currNode.nextPtr = newNode;
         size++;
@@ -84,8 +83,31 @@ public class LinkedList {
             this.value = value;
             this.nextPtr = null;
         }
+    }
+
+    public void reverseLinkedList(){
+        if(head == null){
+            return;
+        }
+        Node curr = head;
+        Node prev = null;
+        Node next = null;
+
+        while (curr != null){
+            next = curr.nextPtr;
+            curr.nextPtr = prev;
+            prev = curr;
+            curr = next;
+        }
+        //This is to print
+        curr = prev;
+        while ((curr != null)){
+            System.out.println("Reverse Link list = "+curr.value);
+            curr = curr.nextPtr;
+        }
 
     }
+
 
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
