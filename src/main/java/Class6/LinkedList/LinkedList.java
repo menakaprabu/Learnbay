@@ -122,7 +122,7 @@ public class LinkedList {
         return slowPtr.value;
     }
 
-    public int addTwoLinkedList(LinkedList list1, LinkedList list2){
+    public String addTwoLinkedList(LinkedList list1, LinkedList list2){
         Node currNode1 = list1.head;
         Node currNode2 = list2.head;
 
@@ -137,7 +137,7 @@ public class LinkedList {
             value2 = value2 + currNode2.value+"";
             currNode2 = currNode2.nextPtr;
         }
-        return Integer.parseInt(value1.trim()) + Integer.parseInt(value2.trim());
+        return Integer.parseInt(value1.trim()) + Integer.parseInt(value2.trim())+"";
     }
 
     public boolean hasCycle(){

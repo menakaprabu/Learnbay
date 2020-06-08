@@ -18,8 +18,14 @@ public class AddTwoLinkedList {
         list2.insert(9);
         list2.insert(9);
 
-        int addedValue = list2.addTwoLinkedList(list1, list2);
+        String addedValue = list2.addTwoLinkedList(list1, list2);
         System.out.println("Added value = "+addedValue);
+        LinkedList outputLinkList = new LinkedList();
+        int i = 0;
+        while(i < addedValue.length()){
+            outputLinkList.insert(addedValue.charAt(i));
+            i++;
+        }
 
     }
 
