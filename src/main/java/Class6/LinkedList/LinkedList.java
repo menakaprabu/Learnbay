@@ -91,7 +91,7 @@ public class LinkedList {
         }
         Node curr = head;
         Node prev = null;
-        Node next = null;
+        Node next;
 
         while (curr != null){
             next = curr.nextPtr;
@@ -99,7 +99,7 @@ public class LinkedList {
             prev = curr;
             curr = next;
         }
-        //This is to print
+        //This is to print. Return prev which is the reversed order
         curr = prev;
         while ((curr != null)){
             System.out.println("Reverse Link list = "+curr.value);

@@ -6,6 +6,7 @@ package Class6.LinkedList;
 
 //Step1: use 3 pointers: curr = head; prev = null; next = null;
 //Step2: while loop: next = curr.next : curr.next = prev : prev = curr ; curr = next
+//Basically make the curr pointer to its previous node. Keep moving the curr node and do the same. Return the prev which is the reveresed list.
 public class ReverseLinkedList {
 
     public static void main(String[] args){
