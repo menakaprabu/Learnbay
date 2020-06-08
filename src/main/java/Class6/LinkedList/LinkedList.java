@@ -15,12 +15,12 @@ public class LinkedList {
         return node;
     }
 
-    public void insert(int value){
+    public Node insert(int value){
         Node newNode = createNode(value);
         if(this.head == null){
             this.head = newNode;
             size++;
-            return;
+            return head;
         }
         Node currNode = this.head;
         while (currNode.nextPtr != null){
@@ -28,6 +28,7 @@ public class LinkedList {
         }
         currNode.nextPtr = newNode;
         size++;
+        return head;
     }
 
     public void insertAtHead(int value){
@@ -118,6 +119,24 @@ public class LinkedList {
             fastPtr = fastPtr.nextPtr.nextPtr;
         }
         return slowPtr.value;
+    }
+
+    public int addTwoLinkedList(LinkedList list1, LinkedList list2){
+        Node currNode1 = list1.head;
+        Node currNode2 = list2.head;
+
+        String value1 = "";
+        while (currNode1 != null){
+            value1 = value1 + currNode1.value+"";
+            currNode1 = currNode1.nextPtr;
+        }
+
+        String value2 = "";
+        while (currNode2 != null){
+            value2 = value2 + currNode2.value+"";
+            currNode2 = currNode2.nextPtr;
+        }
+        return Integer.parseInt(value1.trim()) + Integer.parseInt(value2.trim());
     }
 
 
