@@ -28,6 +28,7 @@ public class LinkedList {
         }
         currNode.nextPtr = newNode;
         size++;
+
         return head;
     }
 
@@ -139,6 +140,19 @@ public class LinkedList {
         return Integer.parseInt(value1.trim()) + Integer.parseInt(value2.trim());
     }
 
+    public boolean hasCycle(){
+        Node fastPtr = head;
+        Node slowPtr = head;
+        while(fastPtr != null && fastPtr.nextPtr != null){
+            fastPtr = fastPtr.nextPtr.nextPtr;
+            slowPtr = slowPtr.nextPtr;
+            if(slowPtr == fastPtr){
+                return true;
+            }
+        }
+
+        return false;
+    }
 
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
