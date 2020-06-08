@@ -108,6 +108,18 @@ public class LinkedList {
 
     }
 
+    //This is to find the middle element of the linked list.
+    public int findMiddleElement(){
+        Node fastPtr = head;
+        Node slowPtr = head;
+
+        while(fastPtr != null && fastPtr.nextPtr != null){
+            slowPtr = slowPtr.nextPtr;
+            fastPtr = fastPtr.nextPtr.nextPtr;
+        }
+        return slowPtr.value;
+    }
+
 
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
