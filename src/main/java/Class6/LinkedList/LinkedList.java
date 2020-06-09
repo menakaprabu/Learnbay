@@ -154,6 +154,53 @@ public class LinkedList {
         return false;
     }
 
+    public Node swapNodesInPair(Node head){
+        if (head == null || head.nextPtr == null) return head;
+        Node second = head.nextPtr;
+        Node third = second.nextPtr;
+
+        second.nextPtr = head;
+        head.nextPtr = swapNodesInPair(third);
+
+        return second;
+    }
+
+    public void mergeTwoSortedList(LinkedList list1, LinkedList list2){
+        Node node1 = list1.head;
+        Node node2 = list2.head;
+
+        LinkedList sortedList = new LinkedList();
+        while(node1 != null && node2 != null){
+            if(node1.value < node2.value){
+                sortedList.insert(node1.value);
+                node1 = node1.nextPtr;
+            }else if(node1.value == node2.value){
+                sortedList.insert(node1.value);
+                sortedList.insert(node2.value);
+                node1 = node1.nextPtr;
+                node2 = node2.nextPtr;
+            }
+            else{
+                sortedList.insert(node2.value);
+                node2 = node2.nextPtr;
+            }
+        }
+        while(node1 != null){
+            sortedList.insert(node1.value);
+            node1 = node1.nextPtr;
+        }
+        while(node2 != null){
+            sortedList.insert(node2.value);
+            node2 = node2.nextPtr;
+        }
+        Node sortedListHead = sortedList.head;
+        while (sortedListHead != null){
+            System.out.println("Sorted list value = "+sortedListHead.value);
+            sortedListHead = sortedListHead.nextPtr;
+        }
+
+    }
+
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         //Insert
