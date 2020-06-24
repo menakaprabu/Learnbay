@@ -1,4 +1,4 @@
-package Class9.BinarySearch;
+package Class9.BinaryTree;
 
 public class BinaryTreeTraversal {
 
