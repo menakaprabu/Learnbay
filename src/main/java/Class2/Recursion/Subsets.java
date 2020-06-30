@@ -20,7 +20,7 @@ public class Subsets {
         //Loop the input array to find the subsets
         for(int i=start;i<input.length;i++){
             subset.add(input[i]);
-           System.out.println("subset = "+subset);
+            System.out.println("subset = "+subset);
             recursionHelper(outputList, subset, input, i+1);
             // remove
             subset.remove(subset.size() - 1);

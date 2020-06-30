@@ -28,7 +28,7 @@ public class FibonocciSeries {
     public static void main(String[] args){
         int max = 8;
         for(int i=0;i<max;i++){
-           // System.out.print("Recursion Febo series "+printFibRecursion(i) +" ");
+            System.out.print("Recursion Febo series "+printFibRecursion(max) +" ");
         }
         fibWithoutRecursion(max);
     }

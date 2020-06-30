@@ -1,5 +1,6 @@
 package Class4.BinarySearch;
 
+//Find the min value in the rotated array. Rotated at some point.
 public class FindMinimumInRotatedArray {
 
     private static int findMinInRotatedArray(int[] input){
@@ -20,14 +21,12 @@ public class FindMinimumInRotatedArray {
             }
             return input[start];
         }
-
-
         return -1;
     }
 
     public static void main(String[] args){
-        int[] input = new int[]{3,4,5,0,1,2};
+        int[] input = new int[]{3,4,5,6,1,2,3};
         int output = findMinInRotatedArray(input);
-        System.out.println("output = "+output);
+        System.out.println("Min output = "+output);
     }
 }
