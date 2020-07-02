@@ -2,13 +2,13 @@ package Class10.BST;
 
 public class Node {
 
-     int data;
+     public int data;
 
-     Node leftNode;
+    public Node leftNode;
 
-     Node rightNode;
+    public Node rightNode;
 
-    Node(int data){
+    public Node(int data){
         this.data = data;
         this.leftNode = null;
         this.rightNode = null;
