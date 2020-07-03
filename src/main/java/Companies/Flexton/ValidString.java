@@ -1,8 +1,8 @@
-package Companies;
+package Companies.Flexton;
 
-import java.util.Stack;
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
 
 public class ValidString {
    private static Map<Character,Character> mappings= new HashMap<Character, Character>();

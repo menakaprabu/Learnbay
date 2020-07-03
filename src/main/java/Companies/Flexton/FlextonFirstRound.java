@@ -1,4 +1,4 @@
-package Companies;
+package Companies.Flexton;
 
 import java.util.List;
 /*
@@ -18,7 +18,7 @@ Output : Elements do not exist
 
 import java.util.ArrayList;
 
-public class Flexton {
+public class FlextonFirstRound {
 
     private static List<Integer> sumPair(int[] arr){
         List<Integer> output = new ArrayList<Integer>();

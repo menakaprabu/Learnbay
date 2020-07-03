@@ -1,4 +1,4 @@
-package Companies;
+package Companies.Flexton;
 
 import java.util.*;
 

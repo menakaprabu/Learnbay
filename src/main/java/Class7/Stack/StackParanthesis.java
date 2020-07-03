@@ -1,4 +1,4 @@
-package Class6.LinkedList;
+package Class7.Stack;
 
 import java.util.Stack;
 
