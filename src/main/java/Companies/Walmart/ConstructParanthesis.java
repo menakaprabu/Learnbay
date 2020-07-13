@@ -8,6 +8,7 @@ public class ConstructParanthesis {
     private static void constructParanthesisString(int n){
         List<String> list = new ArrayList<>();
         dfs("",list,n,n);
+        //To print
          for(int i=0;i<list.size();i++){
             System.out.println("Output = " + list.get(i));
         }
