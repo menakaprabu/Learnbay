@@ -2,6 +2,9 @@ package Companies.Walmart;
 
 import java.util.*;
 
+/**
+ * DegreeOfArray is maximum frequency of the elements
+ */
 public class DegreeOfArray {
 
     static class ElemantInfo{
@@ -26,7 +29,7 @@ public class DegreeOfArray {
                 elemantInfo.rightIndex = i;
                 map.put(input[i], elemantInfo);
             }else{
-                ElemantInfo elemantInfo = new ElemantInfo(1, 0, 0);
+                ElemantInfo elemantInfo = new ElemantInfo(1, i, 0);
                 map.put(input[i], elemantInfo);
             }
         }
@@ -45,13 +48,15 @@ public class DegreeOfArray {
             }
         });
 
-        System.out.println("Output value = "+(list.get(0).getValue().rightIndex - list.get(0).getValue().leftIndex));
+        System.out.println("Output value = "+((list.get(0).getValue().rightIndex - list.get(0).getValue().leftIndex)+1));
     }
 
     public static void main(String[] args){
-        int[] arr = new int[]{1,2,2,3,1,4,2};
-        int[] arr1 = new int[]{1, 2, 2, 3, 1};
-        degreeOfArray(arr);
+        int[] arr1 = new int[]{1, 9, 9, 3, 1};
         degreeOfArray(arr1);
+        int[] arr = new int[]{1, 2, 2, 3, 1, 4, 2};
+        degreeOfArray(arr);
+        int[] arr2 = new int[]{1, 2, 2, 7, 7, 7, 7, 7, 3, 1, 4, 2};
+        degreeOfArray(arr2);
     }
 }
