@@ -21,7 +21,7 @@ public class SumAlreadyExist {
     }
 
     public static void main(String[] args){
-        int[] input = new int[]{ 1,2,5,9};
+        int[] input = new int[]{ 2,7,5,9};
         boolean sumExist = sumAlreadyExist(input);
         System.out.println("Sum present = "+sumExist);
     }

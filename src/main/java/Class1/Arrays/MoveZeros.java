@@ -1,7 +1,5 @@
 package Class1.Arrays;
 
-import java.util.Arrays;
-
 public class MoveZeros {
 
     public static void moveZeroes(int[] nums) {

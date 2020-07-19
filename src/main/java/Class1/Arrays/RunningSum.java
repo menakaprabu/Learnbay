@@ -1,7 +1,5 @@
 package Class1.Arrays;
 
-import java.util.List;
-
 public class RunningSum {
 
     private static void runningSum(int[] arr) {

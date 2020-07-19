@@ -21,19 +21,6 @@ public class FindPair {
         }
     }
 
-    private static void findPair1(int[] arr, int k){
-
-        Set<Integer> set = new HashSet<Integer>();
-
-        for(int i=0;i<arr.length;i++){
-            if(set.contains(arr[i] - k)){
-                System.out.println("arr[i] - k = "+(arr[i] - k));
-            }
-        }
-
-
-    }
-
     public static void main(String[] args){
         int[] input = new int[]{ 0, -1, -2, 2, 1};
         findPair(input, 1);
