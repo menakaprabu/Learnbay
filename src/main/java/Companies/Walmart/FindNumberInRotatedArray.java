@@ -30,14 +30,21 @@ public class FindNumberInRotatedArray {
                      end = mid - 1;
                  }
              }
+            if(input[start] > input[mid] && input[mid] > input[end]) {
+                return -1;
+            }
         }
         return -1;
     }
 
     public static void main(String[] args){
-        int[] input = {4,5,6,7,0,1,2};
-        int index = binarySearch(input, 0);
-        System.out.println(" Index value = "+index);
+     //   int[] input = {4,5,6,7,0,1,2};
+      //  int output = binarySearch(input, 0);
+     //   System.out.println(" output value = "+output);
+
+        int[] input1 = {5,3,1};
+        int output1 = binarySearch(input1, 0);
+        System.out.println("output1 value = "+output1);
     }
 
 }

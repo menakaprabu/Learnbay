@@ -14,9 +14,9 @@ public class PhoneNumberCombination {
             int x = Character.getNumericValue(digits.charAt(i));
 
            while (ans.peek().length() == i){
-               String val = ans.remove();
-               for(char c : mapping[x].toCharArray()){
-                    ans.add(val+c);
+               String val = ans.remove();// a
+               for(char c : mapping[x].toCharArray()){// d e f
+                    ans.add(val+c); //ad , ae, af
                }
            }
         }
@@ -25,8 +25,9 @@ public class PhoneNumberCombination {
 
 
     public static void main(String[] main){
-        List<String> output = letterCombinations("23");
+        List<String> output = letterCombinations("234");
 
+        System.out.println("size = "+output.size());
         for (int i=0;i<output.size();i++){
             System.out.println("Output = "+output.get(i));
         }
