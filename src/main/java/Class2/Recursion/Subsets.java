@@ -30,7 +30,7 @@ public class Subsets {
     //[[], [1], [1, 2], [2]]
     // [[], [1], [1, 2], [1, 2, 3], [1, 3], [2], [2, 3], [3]]
     public static void main(String[] args){
-        int[] input = new int[]{1,2}; // [] [1] [2] [1,2]
+        int[] input = new int[]{1,2, 3}; // [] [1] [2] [1,2]
         List<List<Integer>> resultSet = findSubset(input);
         for (List<Integer> subset: resultSet) {
             System.out.println("Result subset = "+subset);

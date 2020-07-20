@@ -19,7 +19,7 @@ public class SortByFrequency {
                 map.put(input[i], 1);
             }
         }
-        ArrayList<Map.Entry<Integer, Integer>> listOfEntry = new ArrayList<>(map.entrySet());
+        List<Map.Entry<Integer, Integer>> listOfEntry = new ArrayList<>(map.entrySet());
 
         Collections.sort(listOfEntry, new Comparator<Map.Entry<Integer, Integer>>(){
 
