@@ -193,6 +193,7 @@ public class LinkedList {
             sortedList.insert(node2.value);
             node2 = node2.nextPtr;
         }
+        //This is to print
         Node sortedListHead = sortedList.head;
         while (sortedListHead != null){
             System.out.println("Sorted list value = "+sortedListHead.value);

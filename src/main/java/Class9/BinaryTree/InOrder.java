@@ -15,9 +15,6 @@ public class InOrder {
         if(node == null){
             return;
         }
-        if (node == null)
-            return;
-
         /* then recur on left sutree */
         InOrder(node.leftNode);
 
