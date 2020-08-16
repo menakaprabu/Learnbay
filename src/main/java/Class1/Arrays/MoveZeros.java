@@ -1,5 +1,8 @@
 package Class1.Arrays;
 
+/**
+ * Move the zeros at the end of the array (In place)
+ */
 public class MoveZeros {
 
     public static void moveZeroes(int[] nums) {

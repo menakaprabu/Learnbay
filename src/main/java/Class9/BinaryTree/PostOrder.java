@@ -15,9 +15,6 @@ public class PostOrder {
         if(node == null){
             return;
         }
-        if (node == null)
-            return;
-
         /* then recur on left sutree */
         PostOrder(node.leftNode);
 

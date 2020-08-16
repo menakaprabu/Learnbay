@@ -6,4 +6,5 @@ public class Sql {
     ON plays.id = reservations.play_id
     GROUP BY plays.id
     ORDER BY reserved_tickets DESC;*/
+
 }
