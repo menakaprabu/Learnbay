@@ -12,7 +12,7 @@ public class ComparatorExample {
         computerList.add(new Computer("HCL", 16, 800));
         computerList.add(new Computer("Apple", 8, 100));
         computerList.add(new Computer("Dell", 4, 600));
-        Comparator<Computer> comparator = (Computer c1, Computer c2) -> c1.getName().compareTo(c2.getName());
+        Comparator<Computer> comparator = new ComputerComparator();
         Collections.sort(computerList, comparator);
         for (Computer computer : computerList) {
             System.out.println(computer.getName());
