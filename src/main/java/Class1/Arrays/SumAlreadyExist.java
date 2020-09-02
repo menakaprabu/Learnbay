@@ -10,8 +10,8 @@ public class SumAlreadyExist {
             set.add(arr[i]);
         }
         for (int i=0;i<arr.length;i++){
-            for (int j=1;j<arr.length;j++){
-                if(i != j && set.contains(arr[i] + arr[j])){
+            for (int j=i+1;j<arr.length;j++){
+                if(set.contains(arr[i] + arr[j])){
                     System.out.println("arr[i] = "+arr[i]+" arr[j] = "+arr[j]);
                     return true;
                 }
@@ -21,7 +21,7 @@ public class SumAlreadyExist {
     }
 
     public static void main(String[] args){
-        int[] input = new int[]{ 2,7,5,9};
+        int[] input = new int[]{ 2,1,7,5,9};
         boolean sumExist = sumAlreadyExist(input);
         System.out.println("Sum present = "+sumExist);
     }
