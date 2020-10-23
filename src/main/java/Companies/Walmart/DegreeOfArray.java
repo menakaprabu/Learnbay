@@ -34,7 +34,6 @@ public class DegreeOfArray {
             }
         }
 
-        int minSoFar = Integer.MAX_VALUE;
         List<Map.Entry<Integer, ElemantInfo>> list = new LinkedList(map.entrySet());
 
         Collections.sort(list, new Comparator<Map.Entry<Integer, ElemantInfo>>() {

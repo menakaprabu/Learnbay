@@ -6,7 +6,7 @@ package Class3.Array;
 public class RotateArray_Approach1 {
 
     //[1,2,3,4,5,6,7] k = 3
-    //[7,6,5,4,3,2,1] k = 3
+    //[5,6,7,1,2,3,4] k = 3
     private static void rotateArray(int[] input, int k){
 
     int[] extraSpace = new int[input.length];

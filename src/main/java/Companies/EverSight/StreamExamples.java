@@ -13,5 +13,6 @@ public class StreamExamples {
 
        List<Integer> outList = list.stream().filter(i -> i < 5).collect(Collectors.toList());
         outList.forEach(i -> System.out.println("i = "+i));
+        outList.forEach(i -> System.out.println("i TAG === "+i));
     }
 }
