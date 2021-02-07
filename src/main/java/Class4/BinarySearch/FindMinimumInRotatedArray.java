@@ -25,7 +25,7 @@ public class FindMinimumInRotatedArray {
     }
 
     public static void main(String[] args){
-        int[] input = new int[]{3,4,5,6,1,2,3};
+        int[] input = new int[]{4,5,6,7,1,2,3};
         int output = findMinInRotatedArray(input);
         System.out.println("Min output = "+output);
     }

@@ -39,8 +39,8 @@ public class CountNegativeNumbers {
 
     public static void main(String[] args){
         int[][] input = new int[][]{{-1,3,4},
-                                    {2,-2,-1},
-                                    {-1,-1,-9}};
+                                    {-2,-1,1},
+                                    {-5,-2,-1}};
 
         int negativeCount = countNegatives(input);
         System.out.println("negativeCount = "+negativeCount);
