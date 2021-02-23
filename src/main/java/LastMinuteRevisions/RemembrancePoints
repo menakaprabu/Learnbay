@@ -1,0 +1,7 @@
+1. LRU cache = LinkedHashMAP lhmp = new LinkedHashMAP (Remove and put)
+2. Design Bounded Blocking Queue - Queue q = new LinkedList() & wait() notiftAll()
+3. Diagonal Traverse II =   HashMap<Integer,ArrayList<Integer>> hashmap = new HashMap<>(); and index = i+j (2 for loops)
+4. Longest Arithmetic Subsequence = DP  int[][] dp = new int[A.length][2001]; 2 loops
+5. Boundary of Binary Tree = 3 lists & goLeft, goBottom and goRight
+6. Design HashMap = int[] map = new int[1000001]; and map[key] = value + 1
+7. Calculator - Queue<Character> q = new LinkedList<>(); and dfs
