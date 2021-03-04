@@ -31,4 +31,24 @@ public class SumSubArray {
         System.out.println("maxSumofContinousSubArray = "+maxSumofContinousSubArray);
     }
 
+    /*
+    function meetingPlanner(slotsA, slotsB, dur):
+    ia = 0
+    ib = 0
+
+    while (ia < slotsA.length AND ib < slotsB.length):
+        start = max(slotsA[ia][0], slotsB[ib][0])
+        end = min(slotsA[ia][1], slotsB[ib][1])
+
+        if (start + dur <= end):
+            return [start, start + dur]
+
+        if (slotsA[ia][1] < slotsB[ib][1]):
+            ia++
+        else:
+            ib++
+
+    return []
+     */
+
 }
