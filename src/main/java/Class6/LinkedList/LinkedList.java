@@ -91,9 +91,9 @@ public class LinkedList {
         if(head == null){
             return;
         }
-        Node curr = head;
         Node prev = null;
-        Node next;
+        Node curr = head;
+        Node next = null;
 
         while (curr != null){
             next = curr.nextPtr;

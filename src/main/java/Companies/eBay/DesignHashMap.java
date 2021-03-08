@@ -3,7 +3,7 @@ package Companies.eBay;
 public class DesignHashMap {
 
     //-1 is to return -1 if not found
-    int[] map = new int[1000001];
+    int[] map = new int[1000000];
     public DesignHashMap() {
 
     }
@@ -32,6 +32,6 @@ public class DesignHashMap {
         designHashMap.put(3, -1);
         designHashMap.put(1, 9);
         designHashMap.put(2, 10);
-        System.out.println("designHashMap value ="+designHashMap.get(3));
+        System.out.println("designHashMap value ="+designHashMap.get(2));
     }
 }
